@@ -2,7 +2,7 @@
 
 param(
     [Parameter(Mandatory=$true)]
-    [string]$password)
+    [string]$password=$OctopusParameters["password"])
 
 $ErrorActionPreference = "Stop"
 $here = Split-Path $MyInvocation.MyCommand.Definition
