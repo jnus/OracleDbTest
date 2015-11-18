@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>KDB.Database</id>
+    <version>1.0.0</version>
+    <authors>JMN</authors>
+    <owners>JMN</owners>
+    <description>Octopus deploy release package for KvDB</description>
+    </metadata>
+    <files>
+        <file src="deployscripts\*.ps1" />
+    </files>
+</package>
