@@ -10,5 +10,6 @@
     <files>
         <file src="deployscripts\*.ps1" target=".\"/>
         <file src="tools\**\*.*" target="tools"/>
+        <file src="dbscripts\**\*.*" target="dbscripts" />
     </files>
 </package>
