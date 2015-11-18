@@ -9,6 +9,6 @@
     </metadata>
     <files>
         <file src="deployscripts\*.ps1" target=".\"/>
-        <file src="tools" />
+        <file src="tools\**\*.*" />
     </files>
 </package>
