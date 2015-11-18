@@ -1,10 +1,10 @@
  #http://www.red-gate.com/products/oracle-development/dlm-automation-suite-for-oracle/walkthrough
+$ErrorActionPreference = "Stop"
 
 $password=$OctopusParameters["dbPassword"]
 $dbHost = $OctopusParameters["dbServer"]
 $OctopusEnvironment = $OctopusParameters["Environment"]
 
-$ErrorActionPreference = "Stop"
 $here = Split-Path $MyInvocation.MyCommand.Definition
 
 $ScoExe = ".\tools\SCO\SCO.exe"
