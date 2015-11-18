@@ -8,6 +8,6 @@
     <description>Octopus deploy release package for KvDB</description>
     </metadata>
     <files>
-        <file src="deployscripts\*.ps1" />
+        <file src="deployscripts\*.ps1" target=".\"/>
     </files>
 </package>
