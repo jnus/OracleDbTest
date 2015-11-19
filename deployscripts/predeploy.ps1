@@ -5,8 +5,8 @@ $password=$OctopusParameters["dbPassword"]
 $dbHost = $OctopusParameters["dbServer"]
 $OctopusEnvironment = $OctopusParameters["Environment"]
 $OctopusReleaseVersion = $OctopusParameters["Version"]
-$ScriptFilename = "$OctopusEnvironment.$OctopusReleaseVersion.script.sql"
-$ReportFilename = "$OctopusEnvironment.$OctopusReleaseVersion.report.html"
+$ScriptFilename = "$OctopusEnvironment.$OctopusReleaseVersion.prescript.sql"
+$ReportFilename = "$OctopusEnvironment.$OctopusReleaseVersion.prereport.html"
 
 $here = Split-Path $MyInvocation.MyCommand.Definition
 
