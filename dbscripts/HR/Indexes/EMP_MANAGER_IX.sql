@@ -1,0 +1,1 @@
+CREATE INDEX hr.emp_manager_ix ON hr.showmethemoney(manager_id);
