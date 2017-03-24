@@ -6,7 +6,7 @@ CREATE TABLE hr.employees (
   phone_number VARCHAR2(20 BYTE),
   hire_date DATE NOT NULL CONSTRAINT emp_hire_date_nn CHECK ("HIRE_DATE" IS NOT NULL),
   job_id VARCHAR2(10 BYTE) NOT NULL CONSTRAINT emp_job_nn CHECK ("JOB_ID" IS NOT NULL),
-  showmethemoney NUMBER(8,2) CONSTRAINT emp_salary_min CHECK ("SHOWMETHEMONEY">0),
+  salery NUMBER(8,2) CONSTRAINT emp_salary_min CHECK ("SALERY">0),
   commission_pct NUMBER(2,2),
   manager_id NUMBER(6),
   department_id NUMBER(4),
@@ -26,7 +26,7 @@ COMMENT ON COLUMN hr.employees.phone_number IS 'Phone number of the employee; in
 COMMENT ON COLUMN hr.employees.hire_date IS 'Date when the employee started on this job. A not null column.';
 COMMENT ON COLUMN hr.employees.job_id IS 'Current job of the employee; foreign key to job_id column of the
 jobs table. A not null column.';
-COMMENT ON COLUMN hr.employees.showmethemoney IS 'Monthly salary of the employee. Must be greater
+COMMENT ON COLUMN hr.employees.salery IS 'Monthly salary of the employee. Must be greater
 than zero (enforced by constraint emp_salary_min)';
 COMMENT ON COLUMN hr.employees.commission_pct IS 'Commission percentage of the employee; Only employees in sales
 department elgible for commission percentage';
