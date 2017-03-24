@@ -1,1 +1,0 @@
-CREATE INDEX hr.jhist_department_ix ON hr.job_history(department_id);
