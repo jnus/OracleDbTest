@@ -5,7 +5,7 @@ CREATE TABLE hr.departments (
   location_id NUMBER(4),
   CONSTRAINT dept_id_pk PRIMARY KEY (department_id),
   CONSTRAINT dept_loc_fk FOREIGN KEY (location_id) REFERENCES hr.locations (location_id),
-  CONSTRAINT dept_mgr_fk FOREIGN KEY (manager_id) REFERENCES hr.employees (employee_id)
+  CONSTRAINT dept_mgr_fk FOREIGN KEY (manager_id) REFERENCES hr.showmethemoney (employee_id)
 );
 COMMENT ON TABLE hr.departments IS 'Departments table that shows details of departments where employees
 work. Contains 27 rows; references with locations, employees, and job_history tables.';

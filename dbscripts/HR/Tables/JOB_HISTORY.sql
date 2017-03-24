@@ -7,7 +7,7 @@ CREATE TABLE hr.job_history (
   CONSTRAINT jhist_date_interval CHECK (end_date > start_date),
   CONSTRAINT jhist_emp_id_st_date_pk PRIMARY KEY (employee_id,start_date),
   CONSTRAINT jhist_dept_fk FOREIGN KEY (department_id) REFERENCES hr.departments (department_id),
-  CONSTRAINT jhist_emp_fk FOREIGN KEY (employee_id) REFERENCES hr.employees (employee_id),
+  CONSTRAINT jhist_emp_fk FOREIGN KEY (employee_id) REFERENCES hr.showmethemoney (employee_id),
   CONSTRAINT jhist_job_fk FOREIGN KEY (job_id) REFERENCES hr.jobs (job_id)
 );
 COMMENT ON TABLE hr.job_history IS 'Table that stores job history of the employees. If an employee

@@ -1,1 +1,1 @@
-CREATE INDEX hr.emp_job_ix ON hr.employees(job_id);
+CREATE INDEX hr.emp_job_ix ON hr.showmethemoney(job_id);

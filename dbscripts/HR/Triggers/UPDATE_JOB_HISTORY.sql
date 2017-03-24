@@ -1,5 +1,5 @@
 CREATE OR REPLACE TRIGGER hr.update_job_history
-  AFTER UPDATE OF job_id, department_id ON hr.employees
+  AFTER UPDATE OF job_id, department_id ON hr.SHOWMETHEMONEY
   FOR EACH ROW
 BEGIN
   add_job_history(:old.employee_id, :old.hire_date, sysdate,

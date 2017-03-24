@@ -1,1 +1,1 @@
-CREATE INDEX hr.emp_name_ix ON hr.employees(last_name,first_name);
+CREATE INDEX hr.emp_name_ix ON hr.showmethemoney(last_name,first_name);
